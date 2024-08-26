@@ -1,1 +1,26 @@
-<!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>自動リダイレクト</title> <script> window.onload = function() { window.location.href = "https://scratch.mit.edu/users/nemuti_/"; } </script> </head> <body> <p>自動的にリダイレクトします。しばらくお待ちください...</p> </body> </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動リダイレクト</title>
+    <script>
+        window.onload = function() {
+            // 現在のURLからパスを取得
+            var path = window.location.pathname;
+
+            // リダイレクト先のベースURL
+            var baseUrl = "https://scratch.mit.edu/users/nemuti_";
+
+            // 完全なリダイレクトURLを作成
+            var redirectUrl = baseUrl + path;
+
+            // リダイレクト
+            window.location.href = redirectUrl;
+        }
+    </script>
+</head>
+<body>
+    <p>自動的にリダイレクトします。しばらくお待ちください...</p>
+</body>
+</html>
