@@ -1,2 +1,0 @@
-RewriteEngine on
-RewriteRule ^404.html$ https://scratch.mit.edu/users/nemuti_/ [L,R=301]
